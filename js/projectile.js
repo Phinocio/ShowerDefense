@@ -15,8 +15,14 @@ function Projectile(type, posx, posy, destx, desty)
 	this.posy = posy;
 	this.destx = destx;
 	this.desty = desty;
+	this.Update = function() {
+		deltax = x2 - x1;
+		deltay = y2 - y1;
+		
+	}
 }
 
+var testProjectile = new Projectile("normal", 0, 0, 90, 90);
 
 
 var projectiles = new Array();
